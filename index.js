@@ -36,11 +36,10 @@ infos = function(){
 }
 }
 
+let usuario = [];
 
-const usuario1 = new Usuario("leonardo", "24/1/60","m", "rua matriz do Carmo n:80", 964781000, "aha@gmail.com", "hyt0915");
+usuario[0] = new Usuario("leonardo", "24/1/60","m", "rua matriz do Carmo n:80", 964781000, "aha@gmail.com", "hyt0915");
 
-console.log(usuario1);
+usuario[2] = new Comprador ("maria", "4/11/2006","f", "rua do Carmo n:102", 964347810, "maria@gmail.com", "gusnb23", 1);
 
-const usuario2 = new Comprador ("maria", "4/11/2006","f", "rua do Carmo n:102", 964347810, "maria@gmail.com", "gusnb23", 1);
-
-console.log(usuario2);
+console.log(usuario);
