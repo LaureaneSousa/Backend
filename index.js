@@ -1,3 +1,5 @@
+const { Compras } = require("./funcoes");
+
 class Pessoa{
     constructor (nome, dn, genero,  end, cel ){
         this.nome = nome;
@@ -43,3 +45,8 @@ usuario[0] = new Usuario("leonardo", "24/1/60","m", "rua matriz do Carmo n:80", 
 usuario[2] = new Comprador ("maria", "4/11/2006","f", "rua do Carmo n:102", 964347810, "maria@gmail.com", "gusnb23", 1);
 
 console.log(usuario);
+
+const compras = new Compras("mesa" , 2, 100);
+
+console.log("valor total:");
+console.log(compras.valorTotal(2, 100));

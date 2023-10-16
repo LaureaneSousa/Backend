@@ -3,8 +3,8 @@ function Compras (item, qtde, valorUnidade){
     this.qtde = qtde;
     this.valorUnidade = valorUnidade;
 
-    this.valorTotal = function(valorUnidade){
-        this.valorTotal += valorUnidade;
+    this.valorTotal = function(qtde, valorUnidade){
+        this.valorTotal = qtde * valorUnidade;
         return this.valorTotal;
     }
 
